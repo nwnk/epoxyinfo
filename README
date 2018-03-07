@@ -1,0 +1,18 @@
+This is epoxyinfo, a not-entirely-frivolous port of glxinfo to epoxy.
+
+epoxyinfo was inspired as the easiest way to answer the question: "what
+GL configuration does an epoxy-using application see?" In this sense
+epoxyinfo tests just how transparent one's epoxy is. This is not a trivial
+question! epoxy's bootstrap code is subtle, and has to be very careful to
+avoid disrupting the existing GL state of the application, so epoxyinfo
+can be useful to find (or provoke) bugs in epoxy itself.
+
+Future directions:
+
+- clean up the code to be more idiomatically epoxy
+- optionally use EGL/WGL/...
+- your feature here
+
+Every effort will be made to retain a mode of operation that is output-
+compatible with glxinfo (specifically the version from mesa-demos), as
+that's the whole point.
